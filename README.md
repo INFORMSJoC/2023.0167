@@ -9,16 +9,6 @@ The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
 [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() by Hyungki Im and Paul Grigas. 
 
-## Licensing
-
-### Software License
-
-The source code included in this repository is distributed under the [MIT License](LICENSE).
-
-### Data License
-
-The datasets provided in this repository are made available under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE_DATA). Further information is available on the [Creative Commons official page](https://creativecommons.org/licenses/by/4.0/).
-
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
@@ -43,6 +33,17 @@ Below is the BibTex for citing this snapshot of the respoitory.
   note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
 }  
 ```
+
+
+## Licensing
+
+### Software License
+
+The source code included in this repository is distributed under the [MIT License](LICENSE).
+
+### Data License
+
+The datasets provided in this repository are made available under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE_DATA). Further information is available on the [Creative Commons official page](https://creativecommons.org/licenses/by/4.0/).
 
 ## Description
 
