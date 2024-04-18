@@ -1,30 +1,36 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization
 
 This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+Computing](https://pubsonline.informs.org/journal/ijoc).
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() by Hyungki Im and Paul Grigas. 
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+## Licensing
+
+### Software License
+
+The source code included in this repository is distributed under the [MIT License](LICENSE).
+
+### Data License
+
+The datasets provided in this repository are made available under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE_DATA). Further information is available on the [Creative Commons official page](https://creativecommons.org/licenses/by/4.0/).
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+<span style="color: red;">fill here.</span>
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+
+<span style="color: red;">fill here.</span>
+
 
 Below is the BibTex for citing this snapshot of the respoitory.
+<span style="color: red;">change this later.</span>
 
 ```
 @misc{CacheTest,
@@ -40,68 +46,62 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The goal of this software is to demonstrate the effectiveness of the stochastic first-order method which is proposed in [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() for constrained distributionally robust optimization.
+
+## Prerequisites
+
+Before you begin, ensure you have the necessary Python packages installed by referring to the `requirements.txt` file. Additionally, licenses for the commercial solvers [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/) are required.
+
 
 ## Building
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+To compile the C code for the RedBlackTree, follow these steps:
 
-```
-make mult
-```
+1. Create a new virtual environment and install the Python packages specified in `requirements.txt`.
+2. Activate the virtual environment and navigate to the `src/RBTree` directory.
+3. Execute the `setup.py` script using Python to generate the C code from the `cython_RBTree.pyx` file:
 
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
+   ```
+   python setup.py build_ext --inplace
+   ```
+## Repository Structure
 
-```
-make clean
-make sum
-```
+### Data
 
-Be sure to make clean before building a different version of the code.
+The `Data` folder contains the datasets used in our experiments. For the fairness machine learning example, we utilize a customized version of the [adult income dataset](https://archive.ics.uci.edu/dataset/2/adult) from UCI. All other experimental data are generated synthetically during runtime.
+
+### Source Code
+
+The `src` folder houses the source code for each experiment. Each subdirectory contains specific solvers including the stochastic online first-order (SOFO) approach (`SMD_Solver.py`), the online first-order (OFO) approach (`FMD_Solver.py`), and various utility functions (`UBRegret.py`, `test_functions.py`, `utils.py`). You can adjust the experiment parameters by modifying `test_functions.py`.
+
+The `RBTree` subdirectory within `src` implements the RedBlackTree using C code, which must be built as described above.
+
+### Scripts
+
+The `scripts` folder includes Jupyter notebooks for running each experiment. For example, `n_num_test` compares the solving times of SOFO and OFO approaches by varying the number of samples (`n`). The `K_time_test` assesses the duality gap over time with different values of `K`. Detailed explanations are available within each notebook.
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+To conduct new experiments, run the corresponding Jupyter Notebook and modify the parameters as necessary. Results will be stored in the `results` folder, and those used in our publication are in the `submitted_results` folder.
 
-![Figure 1](results/mult-test.png)
+## Replication
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
-
-## Replicating
-
-To replicate the results in [Figure 1](results/mult-test), do either
+To replicate the results presented in our paper, adjust the parameters in the notebooks according to the settings specified in `test_functions.py`. For instance, to replicate the results for Figure 2-(a) in the Fairness ML experiment, modify the parameters in `FML_n_num_test.ipynb` as follows:
 
 ```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
+poly_degree = 3
+n_list_nt = np.linspace(10000, 45000, 15)
+repeats_num = 20
 ```
 
-## Ongoing Development
+<div style="text-align: center;">
+    <img src="Figures/FML_n_num_test.jpg" alt="Figure 2-(a)" width="700" />
+    <p style="text-align: center;">Figure 2-(a): Comparison of solving time between OFO and SOFO</p>
+</div>
 
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+More details of parameters are presented in each Jupyter notebook. Adjusting these parameters will allow you to closely replicate the experiments and analyze the outcomes as documented in the paper. 
 
 ## Support
 
 For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+[issue](https://github.com/INFORMSJoC/2023.0167/issues).
