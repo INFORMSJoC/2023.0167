@@ -94,7 +94,7 @@ repeats_num = 20
 ```
 
 <div style="text-align: center;">
-    <img src="Figures/FML_n_num_test.jpg" alt="Figure 2-(a)" width="700" />
+    <img src="figures/FML_n_num_test.jpg" alt="Figure 2-(a)" width="700" />
     <p style="text-align: center;">Figure 2-(a): Comparison of solving time between OFO and SOFO</p>
 </div>
 
