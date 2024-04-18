@@ -7,7 +7,31 @@ Computing](https://pubsonline.informs.org/journal/ijoc).
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() by Hyungki Im and Paul Grigas. 
+[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization](https://doi.org/10.1287/ijoc.2023.0167) by Hyungki Im and Paul Grigas. 
+
+## Cite
+
+To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
+
+https://doi.org/10.1287/ijoc.2023.0167
+
+https://doi.org/10.1287/ijoc.2023.0167.cd
+
+
+Below is the BibTex for citing this snapshot of the respoitory.
+
+```
+@misc{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization,
+  author =        {Hyungki Im, Paul Grigas},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization}},
+  year =          {2023},
+  doi =           {https://doi.org/10.1287/ijoc.2023.0167.cd},
+  url =           {https://doi.org/10.1287/ijoc.2023.0167},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0167},
+}  
+```
+
 
 ## Licensing
 
@@ -18,31 +42,6 @@ The source code included in this repository is distributed under the [MIT Licens
 ### Data License
 
 The datasets provided in this repository are made available under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE_DATA). Further information is available on the [Creative Commons official page](https://creativecommons.org/licenses/by/4.0/).
-
-## Cite
-
-To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
-
-<span style="color: red;">fill here.</span>
-
-
-<span style="color: red;">fill here.</span>
-
-
-Below is the BibTex for citing this snapshot of the respoitory.
-<span style="color: red;">change this later.</span>
-
-```
-@misc{CacheTest,
-  author =        {T. Ralphs},
-  publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-  note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
-}  
-```
 
 ## Description
 
@@ -104,4 +103,4 @@ More details of parameters are presented in each Jupyter notebook. Adjusting the
 ## Support
 
 For support in using this software, submit an
-[issue](https://github.com/INFORMSJoC/2023.0167/issues).
+[issue](https://github.com/HyungkiIm/SFOM-DRO/issues).
