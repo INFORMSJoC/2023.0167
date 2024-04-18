@@ -71,7 +71,7 @@ The `Data` folder contains the datasets used in our experiments. For the fairnes
 
 ### Source Code
 
-The `src` folder houses the source code for each experiment. Each subdirectory contains specific solvers including the stochastic online first-order (SOFO) approach (`SMD_Solver.py`), the online first-order (OFO) approach (`FMD_Solver.py`), and various utility functions (`UBRegret.py`, `test_functions.py`, `utils.py`). You can adjust the experiment parameters by modifying `test_functions.py`.
+The `src` folder houses the source code for each experiment. Each subdirectory contains specific solvers including the stochastic online first-order (SOFO) approach (`ExperimentName_SMD_Solver.py`), the online first-order (OFO) approach (`ExperimentName_FMD_Solver.py`), and various utility functions (`ExperimentName_UBRegret.py`, `ExperimentName_test_functions.py`, `ExperimentName_utils.py`). You can adjust the experiment parameters by modifying `ExperimentName_test_functions.py`.
 
 The `RBTree` subdirectory within `src` implements the RedBlackTree using C code, which must be built as described above.
 
