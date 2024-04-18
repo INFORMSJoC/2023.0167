@@ -18,7 +18,7 @@ https://doi.org/10.1287/ijoc.2023.0167
 https://doi.org/10.1287/ijoc.2023.0167.cd
 
 
-Below is the BibTex for citing this snapshot of the respoitory.
+Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @misc{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization,
@@ -49,7 +49,7 @@ The goal of this software is to demonstrate the effectiveness of the stochastic 
 
 ## Prerequisites
 
-Before you begin, ensure you have the necessary Python packages installed by referring to the `requirements.txt` file. Additionally, licenses for the commercial solvers [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/) are required.
+Before you begin, ensure you have the necessary Python packages installed by referring to the `requirements.txt` file. Additionally, licenses for the commercial solvers [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/) are required. Moreover, please unzip the `adult.zip` file under the `data` folder to run the fairness ML example.
 
 
 ## Building
