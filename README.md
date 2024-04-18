@@ -103,4 +103,4 @@ More details of parameters are presented in each Jupyter notebook. Adjusting the
 ## Support
 
 For support in using this software, submit an
-[issue](https://github.com/INFORMSJoC/2023.0167/issues).
+[issue](https://github.com/HyungkiIm/SFOM-DRO/issues).
