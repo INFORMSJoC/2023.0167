@@ -85,7 +85,7 @@ To conduct new experiments, run the corresponding Jupyter Notebook and modify th
 
 ## Replication
 
-To replicate the results presented in our paper, adjust the parameters in the notebooks according to the settings specified in `test_functions.py`. For instance, to replicate the results for Figure 2-(a) in the Fairness ML experiment, modify the parameters in `FML_n_num_test.ipynb` as follows:
+To replicate the results presented in our paper, adjust the parameters in the notebooks according to the settings specified in `FML_test_functions.py`. For instance, to replicate the results for Figure 2-(a) in the Fairness ML experiment, modify the parameters in `FML_n_num_test.ipynb` as follows:
 
 ```
 poly_degree = 3
