@@ -9,6 +9,8 @@ The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
 [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization](https://doi.org/10.1287/ijoc.2023.0167) by Hyungki Im and Paul Grigas. 
 
+The "live" version of the software and data can be found [here](https://github.com/HyungkiIm/SFOM-DRO).
+
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
