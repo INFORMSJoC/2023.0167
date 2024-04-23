@@ -23,14 +23,14 @@ https://doi.org/10.1287/ijoc.2023.0167.cd
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@misc{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization,
-  author =        {Hyungki Im, Paul Grigas},
-  publisher =     {INFORMS Journal on Computing},
-  title =         {{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization}},
-  year =          {2023},
-  doi =           {https://doi.org/10.1287/ijoc.2023.0167.cd},
-  url =           {https://doi.org/10.1287/ijoc.2023.0167},
-  note =          {Available for download at https://github.com/INFORMSJoC/2023.0167},
+@misc{Im2023IJOC,
+  author =  {Hyungki Im and Paul Grigas},
+  publisher = {INFORMS Journal on Computing},
+  title = {Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization},
+  year = {2023},
+  doi = {https://doi.org/10.1287/ijoc.2023.0167.cd},
+  url = {https://doi.org/10.1287/ijoc.2023.0167},
+  note = {Available for download at https://github.com/INFORMSJoC/2023.0167},
 }  
 ```
 
